@@ -160,3 +160,11 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.name-list{
+    text-align: center;
+}
+
+.name-list li {
+    padding-bottom: 5px;
+}

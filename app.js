@@ -14,4 +14,16 @@ const agregarAmigo = () => {
     amigos.push(amigoEscrito);
     // Vaciando valor del cuadro de texto
     document.getElementById('amigo').value = "";
+    listarAmigos();
+}
+
+const listarAmigos = () => {
+    
+    let elementoParaLista = document.getElementById('listaAmigos');
+    elementoParaLista.innerHTML = "";
+
+    for(i = 0; i < amigos.length; i++){
+        let textoHTML = "<li>" + amigos[i] + "</li>"
+        elementoParaLista.innerHTML += textoHTML;
+    }
 }
